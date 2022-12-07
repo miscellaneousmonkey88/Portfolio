@@ -6,7 +6,7 @@ html {
   
   
   body {
-    background: linear-gradient(to bottom right, rgb(228, 254, 255), rgb(154, 66, 189));
+    background: linear-gradient(to bottom right, rgb(228, 254, 255), rgb(223, 202, 232));
     background-image: url("pbg2.png");
     background-attachment: fixed;
       /*font-family: 'Courier New', Courier, monospace;*/
@@ -55,8 +55,8 @@ html {
   }
 
     @keyframes travel {
-      from { left: -20vw;     }
-      to   { left: 110vw; }
+      from { left: -5vw;     }
+      to   { left: 95vw; }
     }
     
     @keyframes bounce {
@@ -127,8 +127,8 @@ html {
     }
   
     img {
-      max-width: 25vw;
-      max-height: 25vh;
+      width: 5vw;
+      height: 7vh;
     }
 
   .pcontainer {
@@ -139,13 +139,14 @@ html {
     margin-right: 2.7vw;
     margin-left: 2.7vw;
     display: flex;
-    border-radius: 4vw;
-    justify-content: center;
+    border-radius: 2vw;
+    justify-content: left;
     padding: 2vw;
+    padding-left: 2.6vw;
     flex-direction: row;
     align-items: center;
     color:black;
-    outline: 3px solid rgba(178, 161, 255, 0.499);
+    outline: 4px solid white;
   }
 
   .pcontainer:hover {
@@ -156,14 +157,15 @@ html {
     margin-right: 2.7vw;
     margin-left: 2.7vw;
     display: flex;
-    border-radius: 4vw;
-    justify-content: center;
+    border-radius: 2vw;
+    justify-content: left;
     padding: 2vw;
+    padding-left: 2.6vw;
     flex-direction: row;
     align-items: center;
     color:black;
-    outline: 4px solid rgba(129, 110, 214, 0.499);
-    background-image: linear-gradient(to bottom right, rgb(231, 220, 255), rgb(255, 254, 215))
+    outline: 5px solid white;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 254, 215, 0))
   }
 
   .projects {
@@ -185,21 +187,19 @@ html {
   }
 
   #i {
-    animation-name: spin; /*bounce, spin;*/
-      animation-iteration-count: infinite;
-      animation-duration: 20s;
-  }
-  #i:hover {
-    animation-name: spin; /*bounce, spin;*/
-      animation-iteration-count: infinite;
-      animation-duration: 8s;
+    color: rgba(240, 248, 255, 0);
   }
 
   #d {
     margin-left: 30px;
+    font-size: 19px;
   }
 
   .c {
     display: flex;
     flex-direction: column;
+  }
+  #d1 {
+    margin-left: 30px;
+    font-size: 14px;
   }
