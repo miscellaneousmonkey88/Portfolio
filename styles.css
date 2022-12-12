@@ -2,6 +2,7 @@ html {
     display:flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    background-color: white;
   }
   
   
@@ -12,6 +13,8 @@ html {
       /*font-family: 'Courier New', Courier, monospace;*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       color: black;
+      margin: 0;
+      z-index: -1;
     }
   
   #title {
@@ -42,20 +45,19 @@ html {
     margin-bottom: 0px;
     z-index: -1;
   }
-  #subtitle1 {
-    margin-right: 120px;
+  #subtitle2 {
+    margin-right: 100px;
     margin-left: 100px;
-    font-size: 23px;
+    font-size: 18px;
     color: black;
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
     z-index: -1;
-    color: white;
   }
 
     @keyframes travel {
-      from { left: -5vw;     }
+      from { left: -10vw;     }
       to   { left: 95vw; }
     }
     
@@ -113,8 +115,8 @@ html {
     
     #bouncer {
       position: absolute;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       color:transparent;
       background: transparent;
       -webkit-animation-name: bounce;
@@ -133,31 +135,31 @@ html {
 
   .pcontainer {
     width: 33vw;
-    height: 10vh;
+    height: 30vh;
     margin-bottom: 2vh;
     margin-top: 2vh;
-    margin-right: 2.7vw;
-    margin-left: 2.7vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
     display: flex;
-    border-radius: 2vw;
     justify-content: left;
     padding: 2vw;
     padding-left: 2.6vw;
     flex-direction: row;
     align-items: center;
     color:black;
-    outline: 4px solid white;
+    outline: 3px solid white;
+    border-radius: 1vh;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 254, 215, 0));
   }
 
   .pcontainer:hover {
     width: 33vw;
-    height: 10vh;
+    height: 30vh;
     margin-bottom: 2vh;
     margin-top: 2vh;
-    margin-right: 2.7vw;
-    margin-left: 2.7vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
     display: flex;
-    border-radius: 2vw;
     justify-content: left;
     padding: 2vw;
     padding-left: 2.6vw;
@@ -165,17 +167,55 @@ html {
     align-items: center;
     color:black;
     outline: 5px solid white;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 254, 215, 0))
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 255, 255, 0.622));
+    border-radius: 1vh;
   }
 
+  .pcontainer1 {
+    width: 33vw;
+    height: 30vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: left;
+    padding: 2vw;
+    padding-left: 2.6vw;
+    flex-direction: row;
+    align-items: center;
+    color:transparent;
+    outline: 3px solid white;
+    background-image: url("dev.png");
+    background-size: contain;
+    border-radius: 1vh;
+  }
+  .pcontainer1:hover {
+    width: 33vw;
+    height: 30vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: left;
+    padding: 2vw;
+    padding-left: 2.6vw;
+    flex-direction: row;
+    align-items: center;
+    color:black;
+    outline: 5px solid white;
+    background-image: url("dev.png");
+    border-radius: 1vh;
+  }
+
+
   .projects {
-    padding:3vw;
+    padding:8vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
-    background-image: linear-gradient(to bottom right, white, rgb(236, 227, 255));
   }
 
   #txtbox {
@@ -192,7 +232,7 @@ html {
 
   #d {
     margin-left: 30px;
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .c {
